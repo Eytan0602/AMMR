@@ -20,7 +20,6 @@ function LiveCard() {
   return (
     <div className="flip-card w-full h-[400px] cursor-pointer">
       <div className="flip-card-inner">
-        {/* FRONT: Satellite Radar Sweep */}
         <div className="flip-card-front bg-[#0a0a0a] border border-white/5 flex flex-col justify-between p-6 overflow-hidden">
           <div className="absolute inset-0 flex items-center justify-center opacity-60 pointer-events-none">
             <div className="relative w-40 h-40">
@@ -93,7 +92,6 @@ function FeatureCard({
   return (
     <div className="flip-card w-full h-[400px] cursor-pointer">
       <div className="flip-card-inner">
-        {/* FRONT: Clean visual highlight with more info (Lorem Ipsum description) */}
         <div className="flip-card-front bg-[#101010] border border-white/5 hover:border-emerald-500/10 flex flex-col justify-between p-6 text-left transition-all duration-300">
           <div>
             <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-center text-emerald-500 mb-6">
@@ -114,8 +112,6 @@ function FeatureCard({
             </p>
           </div>
         </div>
-
-        {/* BACK: Detailed lists & Saber más */}
         <div className="flip-card-back bg-[#151515] border border-emerald-500/30 flex flex-col justify-between p-6 text-left">
           <div>
             <p className="text-emerald-500 text-xs mb-3 font-mono tracking-widest">{number} / LOREM</p>
@@ -154,7 +150,6 @@ export default function Features() {
       <div className="bg-noise absolute inset-0 opacity-[0.15] pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto mb-16 text-center">
-        {/* Shield icon badge from Image 4 */}
         <motion.div
           className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500 mx-auto mb-6"
         >
@@ -173,8 +168,6 @@ export default function Features() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
         </p>
       </div>
-
-      {/* 4 Cards: LiveCard (Satellite) + 3 FeatureCards */}
       <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <LiveCard />
         <FeatureCard
